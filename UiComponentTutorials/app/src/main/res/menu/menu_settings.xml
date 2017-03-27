@@ -28,5 +28,4 @@
                 android:title="@string/menu_color_black"/>
         </menu>
     </item>
-
 </menu>
