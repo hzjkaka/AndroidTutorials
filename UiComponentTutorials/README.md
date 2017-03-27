@@ -8,7 +8,7 @@
 SimpleAdapterDemo演示SimpleAdapter的用法；CustomDialogDemo演示自定义对话框的实现；XmlMenuDemo演示如何使用xml文件定义菜单；AcitonModeContextDemo演示如何使用ACtionMode形式的上下文菜单；ProgressBarDemo演示如何使用ProgressBar组件。
 
 ## SimpleAdapter用来转配ListView的用法
-![SimpleAdapter](https://github.com/llfjfz/AndroidTutorials/blob/master/UiComponentTutorials/screenshots/1.png)
+![SimpleAdapter](https://github.com/llfjfz/AndroidTutorials/blob/master/UiComponentTutorials/screenshots/simpleadapter.png)
 
 本界面演示了SimpleAdapter用来转配ListView的用法。ListView每个Item的布局采用相对布局，包含一个ImageView和一个TextView，并且指定ImageView对齐父类布局的右侧。
 
@@ -23,7 +23,7 @@ SimpleAdapterDemo演示SimpleAdapter的用法；CustomDialogDemo演示自定义�
         android:listSelector="#600"/>
 
 ## 自定义对话框的实现
-![CustomDialog](https://github.com/llfjfz/AndroidTutorials/blob/master/UiComponentTutorials/screenshots/1.png)
+![CustomDialog](https://github.com/llfjfz/AndroidTutorials/blob/master/UiComponentTutorials/screenshots/dialog.png)
 
 自定义对话框使用getLayoutInflater()获取LayoutInflater实例，并利用LayoutInflater的inflate()方法从自定义布局文件中加载对话框的布局，从而实现自定义对话框。对话框的布局如下：
 
@@ -62,7 +62,7 @@ SimpleAdapterDemo演示SimpleAdapter的用法；CustomDialogDemo演示自定义�
     </LinearLayout>
     
 ## 使用XML定义菜单
-![XmlDefineMenu](https://github.com/llfjfz/AndroidTutorials/blob/master/UiComponentTutorials/screenshots/1.png)   
+![XmlDefineMenu](https://github.com/llfjfz/AndroidTutorials/blob/master/UiComponentTutorials/screenshots/menu.png)   
 
 在res文件夹下新建menu文件夹，并新建一个xml文件来定义菜单，具体的XML文件内容:
 
@@ -98,7 +98,7 @@ SimpleAdapterDemo演示SimpleAdapter的用法；CustomDialogDemo演示自定义�
     </menu>
 
 ## 创建ActionMode模式的上下文菜单
-![ActionModeContextMenu](https://github.com/llfjfz/AndroidTutorials/blob/master/UiComponentTutorials/screenshots/1.png) 
+![ActionModeContextMenu](https://github.com/llfjfz/AndroidTutorials/blob/master/UiComponentTutorials/screenshots/actionmode.png) 
 
 上下文操作模式是Android3.0以后添加新特性，是上下文菜单的首选模式。
 
@@ -166,7 +166,7 @@ SimpleAdapterDemo演示SimpleAdapter的用法；CustomDialogDemo演示自定义�
 ## 使用ProgressBar指示加载进度
 Google推荐使用ProgressBar来代替ProgressDialog指示加载进度或不确定的进度
 
-![ProgressBar](https://github.com/llfjfz/AndroidTutorials/blob/master/UiComponentTutorials/screenshots/1.png) 
+![ProgressBar](https://github.com/llfjfz/AndroidTutorials/blob/master/UiComponentTutorials/screenshots/progressbar.png) 
 
 默认的ProgressBar呈现出旋转齿轮的方式，如果要更改其样式，修改其style属性
 
