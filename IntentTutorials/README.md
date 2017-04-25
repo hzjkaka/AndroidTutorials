@@ -1,5 +1,5 @@
 # Intent用法演示
-本教程将演示使用隐式Intent调用第三方应用。具体而言，第一个应用输入URL地址，然后调用自己创建的Browser进行访问。本教程包括2个应用：ImplicitIntentDemo和MyBrowser。
+本教程将演示使用隐式Intent调用第三方应用。具体而言，第一个应用输入URL地址，然后调用我们自己创建的Browser进行访问。本教程包括2个应用：ImplicitIntentDemo和MyBrowser。
 
 ## ImplicitIntentDemo
 该应用很简单，输入一个网址，点击按钮开始浏览网页。
@@ -13,7 +13,7 @@
 由于我们创建了一个新的简易浏览器（下文阐述），系统会提供选择框让我们选择将要启动的应用。 这里选择“MyBrowser”应用打开。最后显示效果为：
 
 ![显示网页](https://github.com/llfjfz/AndroidTutorials/blob/master/IntentTutorials/screenshots/3.png) 
-  
+
 按钮的单击事件很简单:
 
     String url = editUrl.getText().toString();
@@ -22,10 +22,10 @@
     intent.setData(Uri.parse(url));
     startActivity(intent);
 
-创建一个Intent，将EditText中获取的文本转换成Uri，设置Intent的动作为Intent.ACTION_VIEW，然后利用该Intent启动Activity。这里Intent的Action设置为VIEW，然后Intent的数据又是传递一个http协议的URI，因此系统会去寻找相关能够浏览网页的应用。 
+创建一个Intent，将EditText中获取的文本转换成Uri，设置Intent的动作为Intent.ACTION_VIEW，然后利用该Intent启动Activity。这里Intent的Action设置为VIEW，而Intent的数据传递一个http协议的URI，因此系统会去寻找相关能够浏览网页的应用。 
 ## MyBrowser
 该应用利用WebView来加载网页。  
-先来看看AndroidManifest.xml,注意其中的intent-filter：
+先来看看AndroidManifest.xml，注意其中的intent-filter：
 
     <intent-filter>
         <action android:name="android.intent.action.VIEW" />
